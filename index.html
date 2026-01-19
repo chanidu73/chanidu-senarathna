@@ -4,98 +4,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Chanidu Senarathna</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <style>
+        body { background-color: #f8f9fa; }
+        .hero-img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .section-title {
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+        }
+        .project-card {
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            background: #111;
+            color: #ccc;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        footer a { color: #fff; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
 </head>
 
-<body class="bg-white text-dark">
+<body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Chanidu Senarathna</a>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link " href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publication.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- MAIN CONTENT -->
     <main class="container py-5">
 
-        <!-- Profile Picture -->
-        <div class="text-center mb-4">
-            <img src="images/chanidu.jpg" alt="Chanidu Senarathna" class="rounded-circle img-thumbnail" style="width: 150px; height: 150px; object-fit: cover;">
+        <!-- PROFILE SECTION -->
+        <div class="text-center mb-5">
+            <img src="images/chanidu.jpg" class="hero-img" alt="Chanidu">
+            <h1 class="mt-4 fw-bold">Chanidu Senarathna</h1>
+            <h5 class="text-muted">AI/ML Engineer • Data Scientist • Entrepreneur</h5>
         </div>
 
-        <div>
-            <h4>Hello!</h4>
-        </div>
+        <!-- ABOUT PREVIEW -->
+        <section class="mb-5">
+            <h2 class="section-title">About Me</h2>
 
+            <p class="lh-lg">
+                I'm <strong>Chanidu Senarathna</strong>, a Data Scientist and AI/ML Engineer from Bandarawela, Sri Lanka. 
+                My work focuses on building intelligent systems across <strong>machine learning, deep learning, NLP, computer vision, 
+                and LLM-based AI solutions</strong>.
+            </p>
 
-        <p class="lh-lg">
-          I'm <strong>Chanidu Senarathna,</strong> an aspiring Software Engineer/AI/Machine learning Engineer & Data Science enthusiast from Bandarawela, Sri Lanka. With a deep passion for technology and a strong self-taught foundation, I’ve spent the last four years exploring the intersections of software development, artificial intelligence, and data science.
-        </p>
-        <p class="lh-lg">
-          While I hold a Diploma in Information Technology, most of my expertise comes from self-driven learning and real-world projects. From building backend systems using frameworks like .NET and Django to working with machine learning models in areas like Natural Language Processing (NLP) and Computer Vision (CV), I’ve been steadily expanding both my technical and problem-solving skills.
-        </p>
-        <p class="lh-lg">
-          My journey began long before the classroom. Whether I’m developing intelligent systems, analyzing data, or diving into the latest developments in AI and large language models, I’m driven by a genuine excitement to learn and create.
-        </p>
-        <p class="lh-lg">
-          I’m always looking for opportunities to collaborate, grow, and contribute meaningfully to forward-thinking projects. Thanks for stopping by my portfolio — I hope it gives you a glimpse into my passion and potential.
-        </p>
-        <p class="lh-lg">Beyond the world of tech, I'm also a young entrepreneur with a growing interest in investing and real estate. I’m actively learning about these fields through hands-on experience and by reading books from some of the best minds in the industry. This broader perspective helps shape the way I think about value, growth, and long-term impact—both in business and technology</p>
-        <p class="lh-lg">
-          Feel free to connect with me on <a href="https://www.linkedin.com/in/chanidu-senarathna-59343a234/" target="_blank">LinkedIn</a> or 📧 <a href="mailto:chanidusenarathna@gmail.com">Email</a>.
-        </p>
+            <p class="lh-lg">
+                I enjoy working end-to-end: data understanding, feature engineering, modeling, deployment, and real-world 
+                integration. Alongside this, I run a <strong>transport business</strong> and actively explore <strong>real estate and investing</strong>, 
+                using data-driven insights to bring value to traditional industries.
+            </p>
 
-        <!-- Links Section -->
-        <div class="mt-5">
-            <h3 class="fw-bold mb-3">🌐 Links</h3>
-            <ul class="list-unstyled">
-                <li class="mb-2">
-                    <a href="mailto:chanidusenarathna6@gmail.com" class="text-decoration-none text-primary">📧 Email</a>
-                </li>
-                <li class="mb-2">
-                    <a href="https://www.linkedin.com/in/chanidu-senarathna-59343a234/" class="text-decoration-none text-primary">💼 LinkedIn</a>
-                </li>
-                <li class="mb-2">
-                    <a href="https://github.com/chanidu73/" class="text-decoration-none text-primary">🐙 GitHub</a>
-                </li>
-                <li class="mb-2">
-                    <a href="https://web.facebook.com/people/Chanidu-Senarathna/pfbid02D41P1ut3NMx37LeZ5saoweJ7qpHVTnJJwZuGohVDy7ccuuX7f3GGwq8nSE5L1AK1l/" class="text-decoration-none text-primary">🌐 Facebook</a>
-                </li>
-                <li class="mb-2">
-                    <a href="https://x.com/Chanedu_99?s=08" class="text-decoration-none text-primary">🐦 Twitter (X)</a>
-                </li>
-            </ul>
-        </div>
+            <a href="about.html" class="btn btn-primary mt-2">Read More →</a>
+        </section>
 
-        <div class="mt-5">
-            <h3 class="fw-bold mb-3">📄 My CVs</h3>
-            <ul class="list-unstyled">
-                <li class="mb-2">
-                    <a href="resume/ChaniduSenarathna(AI-ML Engineer).pdf" class="btn btn-outline-primary mt-3" download>
-                    📄 Download My CV (Related in to the AI/MLE Field)
-                    </a>
-                </li>
-                <li class="mb-2">
-                    <a href="resume/Chanidu-Senarathna(Software Engineer).pdf" class="btn btn-outline-primary mt-3" download>
-                    📄 Download My CV (Related in to the Software Engineering Field)
-                    </a>
-                </li>
+        <!-- PROJECTS PREVIEW (Same style as full projects.html) -->
+        <section class="mb-5">
+            <h2 class="section-title">Featured Projects</h2>
 
-                                <li class="mb-2">
-                    <a href="resume/Chanidu-Senarathna-Real_Estate_Enthusiast.pdf" class="btn btn-outline-primary mt-3" download>
-                    📄 Download My CV (Related in to the Real Estate Field)
-                    </a>
-                </li>
+            <div class="row g-4">
 
-            </ul>
-        </div>
+                <!-- PROJECT 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card shadow-sm">
+                        <img src="images/project1.png" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Property Investment Risk Prediction</h5>
+                            <p class="card-text">Neural network–based real estate risk analysis with a Streamlit UI.</p>
+                            <a href="projects.html" class="btn btn-outline-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card shadow-sm">
+                        <img src="images/project2.png" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">AI Tourism Assistant (RAG + Vector DB)</h5>
+                            <p class="card-text">RAG pipeline with Weaviate vector DB for semantic search.</p>
+                            <a href="projects.html" class="btn btn-outline-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card project-card shadow-sm">
+                        <img src="images/project3.png" class="card-img-top" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Real Estate Price Prediction</h5>
+                            <p class="card-text">Hybrid XGBoost + LSTM model for accurate price estimation.</p>
+                            <a href="projects.html" class="btn btn-outline-primary">View More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="projects.html" class="btn btn-primary btn-lg">See All Projects →</a>
+            </div>
+        </section>
 
     </main>
 
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+
+            <h5 class="fw-bold text-white mb-3">Contact</h5>
+
+            <p class="mb-1">📧 Email: 
+                <a href="mailto:chanidusenarathna6@gmail.com">chanidusenarathna6@gmail.com</a>
+            </p>
+
+            <p class="mb-1">💼 LinkedIn: 
+                <a href="https://www.linkedin.com/in/chanidu-senarathna-59343a234/">https://www.linkedin.com/in/chanidu-senarathna-59343a234/</a>
+            </p>
+
+            <p class="mb-1">🐙 GitHub: 
+                <a href="https://github.com/chanidu73">github.com/chanidu73</a>
+            </p>
+
+            <p class="text-muted mt-3">© 2026 Chanidu Senarathna — All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

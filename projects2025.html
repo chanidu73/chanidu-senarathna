@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Chanidu Senarathna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Chanidu Senarathna</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <h1 class="mb-4 fw-bold"> Projects </h1>
+
+        <div class="mb-5">
+            <h4> Multi-Source Weather ETL Dashboard</h4>
+            <p>This project is a full-fledged ETL pipeline and monitoring dashboard that ingests real-time weather data from external APIs, transforms it, and loads it into a Snowflake cloud data warehouse. The pipeline is orchestrated using Apache Airflow, and the processed data is visualized via a custom interactive dashboard for real-time monitoring.</p>
+
+            <ul>
+                <li>Snowflake</li>
+                <li>Apache Airflow</li>
+                <li>OpenWeatherMap API</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/Multi-Source-Weather-ETL-Dashboard" target="_blank"> Multi-Source Weather ETL Dashboard</a></p>
+        </div>
+
+
+
+        <div class="mb-5">
+            <h4> Product Usage Analytics for E-commerce App</h4>
+            <p>This project showcases a complete product analytics pipeline for an e-commerce web application. Using a synthetic user event dataset, I applied advanced analytical techniques to uncover user engagement trends, conversion performance, retention behaviors, and purchase funnel efficiency.</p>
+
+            <ul>
+                <li>Event stream analysis</li>
+                <li>Cohort segmentation & retention modeling</li>
+                <li>Funnel performance analysis</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/Product-Usage-Analytics-for-E-commerce-App-Task-to-do-" target="_blank">Product-Usage-Analytics-for-E-commerce-App-Task-to-do</a></p>
+        </div>
+
+
+        <div class="mb-5">
+            <h4>RA-MARA RAG Augmented MultiAgent Research Assistant</h4>
+            <p>RA‑MARA is an advanced Retrieval-Augmented Generation (RAG) assistant implemented as a modular, multi-agent system. Built with LangChain, FAISS, and lightweight Hugging Face LLMs.</p>
+
+            <ul>
+                <li>Retrieval-Augmented QA</li>
+                <li>Modular, Agent-Based Architecture</li>
+                <li>LLM</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/RA-MARA-RAG-Augmented-Multi-Agent-Research-Assistant/" target="_blank">RA‑MARA — RAG‑Augmented Multi‑Agent Research Assistant</a></p>
+        </div>
+
+        <div class="mb-5">
+            <h4>Custom LLM-Based Question Answering System</h4>
+            <p>This project is an end-to-end, document-aware question answering 
+                system built using a local language model (TinyLLaMA) integrated with modern NLP 
+                tools like LangChain and FAISS, and deployed via a clean Streamlit interface.
+                The system allows users to upload custom documents (PDF, TXT, DOCX)
+                , which are then parsed, chunked, and embedded into a vector store.
+                 When users ask questions in natural language, the system retrieves the most relevant
+                  document chunks using 
+                semantic similarity search and passes the context to TinyLLaMA for accurate,
+                 contextual answers.</p>
+            <ul>
+                <li> Documents-PDF Base Question Answering System</li>
+                <li>LangChain, TinyLLaMA , FAISS , Streamlit </li>
+                <li>PyTorch</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/Custom-LLM-Question-Answering-System" target="_blank">Custom-LLM-Question-Answering-System</a></p>
+        </div>
+
+        <div class="mb-5">
+            <h4>Document-Level Sentiment Analysis</h4>
+            <p>Built a multi-label classification system to analyze sentiments in Amazon reviews at the document level.</p>
+            <ul>
+                <li>Sentiment Analysis</li>
+                <li>BERT1000, Transformers</li>
+                <li>PyTorch</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/Document-Level-Sentiment-Analysis" target="_blank">Document-level Sentiment Analysis with BERT1000 (PyTorch)</a></p>
+        </div>
+
+        <div class="mb-5">
+            <h4>Machine Translation Model</h4>
+            <p>Developed a machine translation model using the WMT dataset and fine-tuned the Flan-T5 model with LoRA (Low-Rank Adaptation). Prepared data using TensorFlow.</p>
+            <ul>
+                <li>Machine Translation</li>
+                <li>Flan-T5, LoRA</li>
+                <li>TensorFlow, WMT dataset</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/Machine-Translation-LoRA-FlanT5" target="_blank">Machine Translation with LoRA & Flan-T5</a></p>
+        </div>
+
+        <div class="mb-5">
+            <h4>Image Segmentation</h4>
+            <p>Built an image segmentation model using the U-Net architecture to segment objects from the CamVid dataset.</p>
+            <ul>
+                <li>Image Segmentation</li>
+                <li>U-Net architecture</li>
+                <li>TensorFlow, OpenCV (cv2)</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/CamVid-Image-Segmentation" target="_blank">CamVid Image Segmentation</a></p>
+        </div>
+
+        <div class="mb-5">
+            <h4>Portuguese-to-English Language Translation Model</h4>
+            <p>Built a translation model from Portuguese to English using an encoder-decoder architecture with attention.</p>
+            <ul>
+                <li>Seq2Seq model</li>
+                <li>Attention Mechanism</li>
+                <li>TensorFlow, NLTK</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/Portuguese-to-English-Translation" target="_blank">Portuguese-to-English Translation</a></p>
+        </div>
+
+        <div class="mb-5">
+            <h4>PrivateGPT Project Zephyr-7B-Beta</h4>
+            <p>Built a private, local LLM-based Q&A system using Zephyr-7B-Beta, enabling secure document-level search and interaction without internet access.</p>
+            <ul>
+                <li>Zephyr-7B-Beta</li>
+                <li>LangChain</li>
+                <li>FAISS</li>
+                <li>Streamlit</li>
+            </ul>
+            <p><strong>GitHub:</strong> <a href="https://github.com/chanidu73/Private-GPT-Using-LangChain-main" target="_blank">Private-GPT Project Repository</a></p>
+        </div>
+
+ <!-- Backend Projects Section -->
+
+<div class="mb-5">
+    <h5>GraphQL API for Complex Queries</h5>
+    <p>Developed a GraphQL analytics dashboard API tailored for an eCommerce platform to optimize query performance and minimize redundant data retrieval.</p>
+    <ul>
+        <li>ASP.NET Core</li>
+        <li>Hot Chocolate (GraphQL framework)</li>
+        <li>SQLite, Redis</li>
+        <li>JWT-based authentication</li>
+    </ul>
+    <a href="https://github.com/chanidu73/GraphQL-API-for-Complex-Queries.git" target="_blank">
+         GitHub: GraphQL API for Complex Queries
+    </a>
+    </div>
+
+    <div class="mb-5">
+        <h5>Distributed Microservices Architecture (with CQRS and Event Sourcing)</h5>
+        <p>Designed an eCommerce platform using a distributed microservices architecture to enhance scalability and efficient data management.</p>
+        <ul>
+            <li>ASP.NET Core</li>
+            <li>Kafka, Redis</li>
+            <li>Entity Framework Core</li>
+        </ul>
+        <a href="https://github.com/chanidu73/Distributed-Microservices-Architecture-with-CQRS-and-Event-Sourcing-.git" target="_blank">
+             GitHub: Microservices with CQRS and Event Sourcing
+        </a>
+    </div>
+
+    <div class="mb-5">
+        <h5>Event-Driven Inventory Management System</h5>
+        <p>Built a real-time inventory management system for an eCommerce platform, including automated stock level alerts.</p>
+        <ul>
+            <li>ASP.NET Core</li>
+            <li> Kafka, Event Sourcing</li>
+            <li> Docker,  Kubernetes</li>
+        </ul>
+        <a href="https://github.com/chanidu73/Event-Driven-Inventory-eCommerce-Management-System" target="_blank">
+             GitHub: Inventory Management System
+        </a>
+    </div>
+
+    <div class="mb-5">
+        <h5> API Gateway for E-Commerce Platform</h5>
+        <p>Created an API Gateway to manage and streamline traffic routing across various microservices in an eCommerce architecture.</p>
+        <ul>
+            <li>ASP.NET Core</li>
+            <li> Ocelot,  Consul</li>
+            <li> OAuth2 / JWT Authentication</li>
+        </ul>
+        <a href="https://github.com/chanidu73/ECommerce-API-Gateway-" target="_blank">
+             GitHub: E-Commerce API Gateway
+        </a>
+    </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+
+            <h5 class="fw-bold text-white mb-3">Contact</h5>
+
+            <p class="mb-1">📧 Email: 
+                <a href="mailto:chanidusenarathna6@gmail.com">chanidusenarathna6@gmail.com</a>
+            </p>
+
+            <p class="mb-1">💼 LinkedIn: 
+                <a href="https://linkedin.com/in/chanidu73">linkedin.com/in/chanidu73</a>
+            </p>
+
+            <p class="mb-1">🐙 GitHub: 
+                <a href="https://github.com/chanidu73">github.com/chanidu73</a>
+            </p>
+
+            <p class="text-muted mt-3">© 2026 Chanidu Senarathna — All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
